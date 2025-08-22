@@ -1,13 +1,8 @@
 import styled from "styled-components/native";
-import { colors } from "../../theme/tokens";
+import { colors, fonts } from "../../theme/tokens";
 import Constants from "expo-constants";
 
 export const Container = styled.View`
-  flex: 1;
-`;
-
-export const HeaderContainer = styled.View`
-  margin-top: ${Constants.statusBarHeight + 15};
   flex: 1;
 `;
 
@@ -18,15 +13,17 @@ export const Header = styled.View`
   align-items: center;
 `;
 
-export const Body = styled.View`
-  background-color: ${colors.secondary};
+export const HeaderContainer = styled.View`
+  margin-top: ${Constants.statusBarHeight + 10};
+  margin-bottom: ${Constants.statusBarHeight + 10};
   flex: 1;
+  /* background-color: orange; */
 `;
 
 export const HeaderIconsContainer = styled.View`
-  /* background-color: red; */
+  /* background-color: green; */
   width: 90%;
-  height: 48px;
+  height: 55px;
   flex-direction: row;
   justify-content: space-between;
 `;
@@ -41,13 +38,35 @@ export const IconUserContainer = styled.View`
 `;
 
 export const RightIconsContainer = styled.View`
-  width: 45%;
+  width: 35%;
   /* background-color: blue; */
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
 `;
 
+export const UserGreetingsContainer = styled.View`
+  /* background-color: green; */
+  flex: 1;
+  justify-content: center;
+`;
+
 export const UserGreetings = styled.Text`
-  color: red;
+  color: ${colors.secondary};
+  font-size: 18px;
+  font-family: ${fonts.Roboto_700Bold};
+`;
+
+
+
+
+
+
+
+
+
+
+export const Body = styled.View`
+  background-color: ${colors.secondary};
+  flex: 1;
 `;

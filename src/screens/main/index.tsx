@@ -11,6 +11,7 @@ import {
   IconUserContainer,
   RightIconsContainer,
   UserGreetings,
+  UserGreetingsContainer,
 } from "./style";
 
 const Home = () => {
@@ -28,7 +29,9 @@ const Home = () => {
               <IconMessagePlusSVG />
             </RightIconsContainer>
           </HeaderIconsContainer>
-          <UserGreetings>Anderson Lobo</UserGreetings>
+          <UserGreetingsContainer>
+            <UserGreetings>Olá, Anderson Lobo</UserGreetings>
+          </UserGreetingsContainer>
         </HeaderContainer>
       </Header>
       <Body />
