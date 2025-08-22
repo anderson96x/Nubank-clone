@@ -3,6 +3,8 @@ import IconHelpSVG from "../../../assets/svg/IconHelpSVG";
 import IconMessagePlusSVG from "../../../assets/svg/IconMessagePlusSVG";
 import IconUserSVG from "../../../assets/svg/IconUserSVG";
 import {
+  BalanceContainer,
+  BalanceLabel,
   Body,
   Container,
   Header,
@@ -34,7 +36,13 @@ const Home = () => {
           </UserGreetingsContainer>
         </HeaderContainer>
       </Header>
-      <Body />
+
+      <Body>
+        <BalanceContainer>
+          <BalanceLabel>Saldo em conta</BalanceLabel>
+          <BalanceLabel>R$ 27.389,22</BalanceLabel>
+        </BalanceContainer>
+      </Body>
     </Container>
   );
 };

@@ -6,8 +6,8 @@ export const fonts = {
 };
 
 export const colors = {
-  primary: "#8a19d6",
-  secondary: "#ffffff",
+  purple: "#8a19d6",
+  white: "#ffffff",
   gray: "#F0F1F5",
   black: "#000000",
 };
