@@ -11,7 +11,7 @@ export const Container = styled.View`
 // Header
 export const Header = styled.View`
   background-color: ${colors.purple};
-  height: 21%;
+  height: 21.5%;
   ${PADDING};
   align-items: center;
 `;
@@ -70,6 +70,7 @@ export const BalanceContainer = styled.View`
   /* background-color: red; */
   height: 15%;
   justify-content: center;
+  gap: 5px;
 `;
 
 export const BalanceLabel = styled.Text`
