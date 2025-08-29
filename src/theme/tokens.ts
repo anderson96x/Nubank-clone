@@ -11,5 +11,3 @@ export const colors = {
   gray: "#F0F1F5",
   black: "#000000",
 };
-
-export const ICON_SIZE = 25;

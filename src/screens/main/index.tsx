@@ -1,8 +1,11 @@
-import IconClosedEyeSVG from "../../../assets/svg/IconClosedEyeSVG";
-import IconHelpSVG from "../../../assets/svg/IconHelpSVG";
-import IconMessagePlusSVG from "../../../assets/svg/IconMessagePlusSVG";
-import IconUserSVG from "../../../assets/svg/IconUserSVG";
 import BankServices from "../../components/BankServices";
+import {
+  IconClosedEyeSVG,
+  IconMessagePlusSVG,
+  IconHelpSVG,
+  IconUserSVG,
+} from "$svg/HeaderIcons";
+
 import {
   BalanceContainer,
   BalanceLabel,

@@ -8,7 +8,7 @@ export const Container = styled.View`
 `;
 
 export const ButtonContainer = styled.View`
-  width: 25%;
+  width: 80px;
   align-items: center;
 `;
 
@@ -17,10 +17,14 @@ export const IconContainer = styled.View`
   width: 70px;
   height: 70px;
   border-radius: 45px;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Text = styled.Text`
   font-family: ${fonts.Roboto_500Medium};
+  font-size: 12px;
   text-align: center;
   margin-top: 15px;
+  width: 75px;
 `;
