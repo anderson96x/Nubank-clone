@@ -4,7 +4,7 @@ import { IconPagar, IconPix, IconRecarga } from "$svg/BankServicesIcons";
 
 const BankServices: React.FC = () => {
   const DATA = [
-    { id: 1, title: "Área Pix\ne Transferir", icon: <IconPix /> },
+    { id: 1, title: "Área Pix\ne Transferir", icon: <IconPix />, firstIcon: true },
     { id: 2, title: "Pagar", icon: <IconPagar /> },
     { id: 3, title: "Pegar\nemprestado", icon: <></> },
     { id: 4, title: "Caixinha\nTurbo", icon: <></> },
@@ -18,7 +18,8 @@ const BankServices: React.FC = () => {
         horizontal={true}
         data={DATA}
         renderItem={({ item }) => (
-          <ButtonContainer>
+          // Trying to get the icons to scroll as the app does
+          <ButtonContainer style={{marginLeft: item.firstIcon ? 20 : 0}}>
             <IconContainer>{item.icon}</IconContainer>
             <Text>{item.title}</Text>
           </ButtonContainer>

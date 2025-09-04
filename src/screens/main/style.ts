@@ -63,7 +63,7 @@ export const UserGreetings = styled.Text`
 export const Body = styled.View`
   background-color: ${colors.white};
   flex: 1;
-  ${PADDING};
+  //${PADDING};
 `;
 
 export const BalanceContainer = styled.View`
@@ -71,6 +71,7 @@ export const BalanceContainer = styled.View`
   height: 15%;
   justify-content: center;
   gap: 5px;
+  ${PADDING};
 `;
 
 export const BalanceLabel = styled.Text`
