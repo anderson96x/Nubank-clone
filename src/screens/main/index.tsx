@@ -15,10 +15,14 @@ import {
   HeaderContainer,
   HeaderIconsContainer,
   IconUserContainer,
+  MyCards_IconContainer,
+  MyCardsContainer,
+  MyCardsLabel,
   RightIconsContainer,
   UserGreetings,
   UserGreetingsContainer,
 } from "./style";
+import IconCard from "$svg/IconCard";
 
 const Home = () => {
   return (
@@ -47,6 +51,12 @@ const Home = () => {
           <BalanceLabel>R$ 27.389,22</BalanceLabel>
         </BalanceContainer>
         <BankServices></BankServices>
+        <MyCardsContainer>
+          <MyCards_IconContainer>
+            <IconCard />
+          </MyCards_IconContainer>
+          <MyCardsLabel>Meus cartões</MyCardsLabel>
+        </MyCardsContainer>
       </Body>
     </Container>
   );

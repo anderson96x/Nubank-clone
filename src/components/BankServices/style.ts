@@ -5,6 +5,10 @@ export const Container = styled.View`
   flex-direction: row;
   margin-top: 20px;
   margin-bottom: 20px;
+
+  /* Cancelling parent's margins */
+  margin-left: -20px;
+  margin-right: -20px;
 `;
 
 export const ButtonContainer = styled.View`
