@@ -81,11 +81,12 @@ export const BalanceLabel = styled.Text`
 
 export const MyCardsContainer = styled.View`
   background-color: ${colors.gray};
-  border-radius: 15px;
+  border-radius: 20px;
   height: 10%;
   width: 100%;
   flex-direction: row;
   align-items: center;
+  margin-top: 10px;
 `;
 
 export const MyCards_IconContainer = styled.View`

@@ -5,8 +5,8 @@ import { colors } from "$src/theme/tokens";
 function IconCard(props: any) {
   return (
     <Svg
-      width={25}
-      height={25}
+      width={20}
+      height={20}
       viewBox="0 0 20 25"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
