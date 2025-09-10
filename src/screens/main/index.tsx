@@ -5,9 +5,11 @@ import {
   IconHelpSVG,
   IconUserSVG,
 } from "$svg/HeaderIcons";
-
+import ChevronRight from "$svg/ChevronRight";
 import {
   BalanceContainer,
+  BalanceTextContainer,
+  BalanceChevronContainer,
   BalanceLabel,
   Body,
   Container,
@@ -48,8 +50,13 @@ const Home = () => {
 
       <Body>
         <BalanceContainer>
-          <BalanceLabel>Saldo em conta</BalanceLabel>
-          <BalanceLabel>R$ 27.389,22</BalanceLabel>
+          <BalanceTextContainer>
+            <BalanceLabel>Saldo em conta</BalanceLabel>
+            <BalanceLabel>R$ 27.389,22</BalanceLabel>
+          </BalanceTextContainer>
+          <BalanceChevronContainer>
+            <ChevronRight />
+          </BalanceChevronContainer>
         </BalanceContainer>
         <BankServices></BankServices>
         <MyCardsContainer>

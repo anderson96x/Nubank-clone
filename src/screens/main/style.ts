@@ -67,10 +67,24 @@ export const Body = styled.View`
 `;
 
 export const BalanceContainer = styled.View`
-  /* background-color: red; */
+  /* background-color: green; */
   height: 15%;
-  justify-content: center;
+  flex-direction: row;
+  padding-top: 5%;
+  padding-bottom: 5%;
+`;
+
+export const BalanceTextContainer = styled.View`
+  /* background-color: red; */
   gap: 5px;
+  width: 80%;
+`;
+
+export const BalanceChevronContainer = styled.View`
+  /* background-color: blue; */
+  padding-top: 5px;
+  align-items: flex-end;
+  width: 20%;
 `;
 
 export const BalanceLabel = styled.Text`
