@@ -3,7 +3,6 @@ import { colors, fonts } from "../../theme/tokens";
 
 export const Container = styled.View`
   margin-top: 20px;
-  padding: 10px;
   border-radius: 20px;
   width: 100%;
   /* background-color: #eeeefe; */

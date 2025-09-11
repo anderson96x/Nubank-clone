@@ -49,7 +49,7 @@ function CarouselMessages() {
       <Pagination.Basic
         progress={progress}
         data={data}
-        dotStyle={{ backgroundColor: "rgba(0,0,0,0.2)", borderRadius: 50 }}
+        dotStyle={{ backgroundColor: "rgba(0,0,0,0.2)", borderRadius: 50, height: 6, width: 6, marginBottom: 15 }}
         containerStyle={{ gap: 10 }}
         onPress={onPressPagination}
       />

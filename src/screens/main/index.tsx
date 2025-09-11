@@ -23,6 +23,7 @@ import {
 import IconCard from "$svg/IconCard";
 import CarouselMessages from "$components/CarouselMessages";
 import BankBalance from "$components/BankBalance";
+import CreditCard from "$components/CreditCard";
 
 const Home = () => {
   return (
@@ -56,6 +57,7 @@ const Home = () => {
         </MyCardsContainer>
         <CarouselMessages />
         <Hr />
+        <CreditCard />
       </Body>
     </Container>
   );

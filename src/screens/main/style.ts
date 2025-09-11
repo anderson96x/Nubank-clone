@@ -69,11 +69,11 @@ export const Body = styled.View`
 export const MyCardsContainer = styled.View`
   background-color: ${colors.gray};
   border-radius: 20px;
-  height: 10%;
+  height: 8%;
   width: 100%;
   flex-direction: row;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 5px;
 `;
 
 export const MyCards_IconContainer = styled.View`
@@ -88,8 +88,8 @@ export const MyCardsLabel = styled.Text`
 
 export const Hr = styled.View`
   background-color: ${colors.gray};
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
   margin-left: -20px;
   height: 2px;
   width: 150%;
