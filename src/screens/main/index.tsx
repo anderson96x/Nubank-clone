@@ -5,12 +5,7 @@ import {
   IconHelpSVG,
   IconUserSVG,
 } from "$svg/HeaderIcons";
-import ChevronRight from "$svg/ChevronRight";
 import {
-  BalanceContainer,
-  BalanceTextContainer,
-  BalanceChevronContainer,
-  BalanceLabel,
   Body,
   Container,
   Header,
@@ -27,6 +22,7 @@ import {
 } from "./style";
 import IconCard from "$svg/IconCard";
 import CarouselMessages from "$components/CarouselMessages";
+import BankBalance from "$components/BankBalance";
 
 const Home = () => {
   return (
@@ -50,15 +46,7 @@ const Home = () => {
       </Header>
 
       <Body>
-        <BalanceContainer>
-          <BalanceTextContainer>
-            <BalanceLabel>Saldo em conta</BalanceLabel>
-            <BalanceLabel>R$ 27.389,22</BalanceLabel>
-          </BalanceTextContainer>
-          <BalanceChevronContainer>
-            <ChevronRight />
-          </BalanceChevronContainer>
-        </BalanceContainer>
+        <BankBalance />
         <BankServices></BankServices>
         <MyCardsContainer>
           <MyCards_IconContainer>
