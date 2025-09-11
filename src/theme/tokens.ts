@@ -8,6 +8,6 @@ export const fonts = {
 export const colors = {
   purple: "#8a19d6",
   white: "#ffffff",
-  gray: "#F0F1F5",
+  gray: "#efefef",
   black: "#000000",
 };

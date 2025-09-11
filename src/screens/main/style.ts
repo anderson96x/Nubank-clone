@@ -112,3 +112,12 @@ export const MyCardsLabel = styled.Text`
   font-size: 15px;
   font-family: ${fonts.Roboto_500Medium};
 `;
+
+export const Hr = styled.View`
+  background-color: ${colors.gray};
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: -20px;
+  height: 2px;
+  width: 150%;
+`;

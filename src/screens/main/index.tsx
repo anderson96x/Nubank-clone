@@ -23,6 +23,7 @@ import {
   RightIconsContainer,
   UserGreetings,
   UserGreetingsContainer,
+  Hr,
 } from "./style";
 import IconCard from "$svg/IconCard";
 import CarouselMessages from "$components/CarouselMessages";
@@ -66,6 +67,7 @@ const Home = () => {
           <MyCardsLabel>Meus cartões</MyCardsLabel>
         </MyCardsContainer>
         <CarouselMessages />
+        <Hr />
       </Body>
     </Container>
   );
