@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useEffect } from "react";
 import { InnerContainer, Container, Text } from "./style";
 import { useSharedValue } from "react-native-reanimated";
 import Carousel, {
@@ -13,12 +13,12 @@ const messages = [
     <Text style={{ fontWeight: "bold" }}>Anderson Lobo.</Text>
   </>,
   <>
-    Todas os direitos são reservados ao{" "}
+    Todos os direitos são reservados ao{" "}
     <Text style={{ fontWeight: "bold" }}>Nubank</Text>
   </>,
   <>
-    <Text style={{ fontWeight: "bold" }}>Pix no crédito: </Text>faça pagamentos
-    sem usar o saldo da conta.
+    <Text style={{ fontWeight: "bold" }}>Pix no crédito: </Text>
+    faça pagamentos sem usar o saldo da conta.
   </>,
 ];
 
@@ -28,14 +28,29 @@ function CarouselMessages() {
 
   const onPressPagination = (index: number) => {
     ref.current?.scrollTo({
-      count: index - progress.value,
+      count: index - Math.round(progress.value),
       animated: true,
     });
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const currentIndex = Math.round(progress.value);
+      const nextIndex = (currentIndex + 1) % data.length;
+
+      ref.current?.scrollTo({
+        count: nextIndex - currentIndex,
+        animated: true,
+      });
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [data.length, progress]);
+
   return (
     <Container>
       <Carousel
+        ref={ref}
         width={300}
         height={80}
         data={data}
@@ -46,10 +61,17 @@ function CarouselMessages() {
           </InnerContainer>
         )}
       />
+
       <Pagination.Basic
         progress={progress}
         data={data}
-        dotStyle={{ backgroundColor: "rgba(0,0,0,0.2)", borderRadius: 50, height: 6, width: 6, marginBottom: 15 }}
+        dotStyle={{
+          backgroundColor: "rgba(0,0,0,0.2)",
+          borderRadius: 50,
+          height: 6,
+          width: 6,
+          marginBottom: 15,
+        }}
         containerStyle={{ gap: 10 }}
         onPress={onPressPagination}
       />
