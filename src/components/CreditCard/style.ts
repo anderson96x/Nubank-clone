@@ -3,7 +3,7 @@ import { colors, fonts } from "../../theme/tokens";
 
 export const CreditCardContainer = styled.View`
   /* background-color: green; */
-  height: 15%;
+  height: 133px;
   flex-direction: row;
 `;
 
@@ -34,7 +34,7 @@ export const Label = styled.Text`
 `;
 
 export const LimitLabel = styled.Text`
-  color: #a5a5a5;
+  color: #686868;
   font-size: 15px;
   font-family: ${fonts.Roboto_400Regular};
 `;

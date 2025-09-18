@@ -4,15 +4,17 @@ import Constants from "expo-constants";
 
 const MARGIN = "margin-left: 20px; margin-right: 20px;";
 
-export const Container = styled.View`
-  flex: 1;
+export const Container = styled.ScrollView`
+  flex-grow: 1;
+  padding-bottom: 300px;
 `;
 
 // Header
 export const Header = styled.View`
   background-color: ${colors.purple};
-  height: 21.5%;
+  height: 23%;
   align-items: center;
+  margin-bottom: 10px;
 `;
 
 export const HeaderContainer = styled.View`
@@ -69,7 +71,7 @@ export const Body = styled.View`
 export const MyCardsContainer = styled.View`
   background-color: ${colors.gray};
   border-radius: 20px;
-  height: 8%;
+  height: 10%;
   width: 100%;
   flex-direction: row;
   align-items: center;
