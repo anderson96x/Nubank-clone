@@ -25,6 +25,7 @@ import CarouselMessages from "$components/CarouselMessages";
 import BankBalance from "$components/BankBalance";
 import CreditCard from "$components/CreditCard";
 import { ScrollView } from "react-native";
+import Loan from "$components/Loan";
 
 const Home = () => {
   return (
@@ -60,6 +61,8 @@ const Home = () => {
           <CarouselMessages />
           <Hr />
           <CreditCard />
+          <Hr />
+          <Loan />
           <Hr />
         </Body>
       </Container>
