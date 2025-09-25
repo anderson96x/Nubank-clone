@@ -26,6 +26,7 @@ import BankBalance from "$components/BankBalance";
 import CreditCard from "$components/CreditCard";
 import { ScrollView } from "react-native";
 import Loan from "$components/Loan";
+import FindOutMore from "$components/FindOutMore";
 
 const Home = () => {
   return (
@@ -64,6 +65,7 @@ const Home = () => {
           <Hr />
           <Loan />
           <Hr />
+          <FindOutMore />
         </Body>
       </Container>
     </ScrollView>

@@ -12,7 +12,7 @@ export const Container = styled.ScrollView`
 // Header
 export const Header = styled.View`
   background-color: ${colors.purple};
-  height: 23%;
+  height: 175px;
   align-items: center;
   margin-bottom: 10px;
 `;
@@ -71,7 +71,7 @@ export const Body = styled.View`
 export const MyCardsContainer = styled.View`
   background-color: ${colors.gray};
   border-radius: 20px;
-  height: 10%;
+  height: 60px;
   width: 100%;
   flex-direction: row;
   align-items: center;

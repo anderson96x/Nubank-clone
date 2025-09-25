@@ -3,7 +3,7 @@ import { colors, fonts } from "../../theme/tokens";
 
 export const BalanceContainer = styled.View`
   /* background-color: green; */
-  height: 15%;
+  height: 90px;
   flex-direction: row;
   padding-top: 5%;
   padding-bottom: 5%;
