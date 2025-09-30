@@ -18,7 +18,7 @@ import {
   RightIconsContainer,
   UserGreetings,
   UserGreetingsContainer,
-  Hr,
+  Hr
 } from "./style";
 import IconCard from "$svg/IconCard";
 import CarouselMessages from "$components/CarouselMessages";
@@ -27,6 +27,7 @@ import CreditCard from "$components/CreditCard";
 import { ScrollView } from "react-native";
 import Loan from "$components/Loan";
 import FindOutMore from "$components/FindOutMore";
+import RateThisScreen from "$components/RateThisScreen";
 
 const Home = () => {
   return (
@@ -66,6 +67,7 @@ const Home = () => {
           <Loan />
           <Hr />
           <FindOutMore />
+          <RateThisScreen />
         </Body>
       </Container>
     </ScrollView>

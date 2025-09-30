@@ -6,7 +6,7 @@ const MARGIN = "margin-left: 20px; margin-right: 20px;";
 
 export const Container = styled.ScrollView`
   flex-grow: 1;
-  padding-bottom: 300px;
+  padding-bottom: 120px;
 `;
 
 // Header
