@@ -6,8 +6,8 @@ export const RateThisScreenContainer = styled.View`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 5px;
+  padding-bottom: 10px;
 `;
 
 export const RateThisScreenTextContainer = styled.View`
