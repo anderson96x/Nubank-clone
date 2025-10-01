@@ -1,9 +1,9 @@
 import BankServices from "../../components/BankServices";
 import {
-  IconClosedEyeSVG,
-  IconMessagePlusSVG,
   IconHelpSVG,
   IconUserSVG,
+  IconOpenEyeSVG,
+  IconShieldTickSVG,
 } from "$svg/HeaderIcons";
 import {
   Body,
@@ -42,9 +42,9 @@ const Home = () => {
                   <IconUserSVG />
                 </IconUserContainer>
                 <RightIconsContainer>
-                  <IconClosedEyeSVG />
+                  <IconOpenEyeSVG />
                   <IconHelpSVG />
-                  <IconMessagePlusSVG />
+                  <IconShieldTickSVG />
                 </RightIconsContainer>
               </HeaderIconsContainer>
               <UserGreetingsContainer>

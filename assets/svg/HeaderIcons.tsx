@@ -20,6 +20,25 @@ export const IconClosedEyeSVG = (props: any) => (
   </Svg>
 );
 
+export const IconOpenEyeSVG = (props: any) => (
+  <Svg
+    width={ICON_SIZE}
+    height={ICON_SIZE}
+    viewBox="0 0 20 20"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <Path
+      d="M17.984 10.239C17.046 8.754 14.254 5 10 5s-7.045 3.754-7.983 5.239m10.483.594a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0z"
+      stroke="#fff"
+      strokeWidth={1.8}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </Svg>
+);
+
 export const IconHelpSVG = (props: any) => (
   <Svg
     width={ICON_SIZE}
@@ -57,6 +76,25 @@ export const IconMessagePlusSVG = (props: any) => (
       d="M4.49425 6.14215C5.65234 5.00686 7.2387 4.30682 8.98857 4.30682H20.5454C22.2953 4.30682 23.8816 5.00686 25.0397 6.14215M4.49425 6.14215C3.30559 7.30742 2.56812 8.93122 2.56812 10.7273V17.1477C2.56812 20.6937 5.44265 23.5682 8.98857 23.5682H16.0511M4.49425 6.14215L14.767 15.8636L25.0397 6.14215M25.0397 6.14215C26.2284 7.30742 26.9658 8.93122 26.9658 10.7273V14.5796M23.7556 18.4318V27.4205M28.2499 22.9261H19.2613"
       stroke="white"
       strokeWidth={2.56818}
+    />
+  </Svg>
+);
+
+export const IconShieldTickSVG = (props: any) => (
+  <Svg
+    width={ICON_SIZE}
+    height={ICON_SIZE}
+    viewBox="0 0 20 20"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    {...props}
+  >
+    <Path
+      d="M7.5 9.583l1.667 1.667 3.75-3.75m3.75 2.5c0 4.09-4.462 7.065-6.085 8.012-.185.108-.277.162-.407.19a.946.946 0 01-.35 0c-.13-.028-.222-.082-.407-.19C7.795 17.066 3.333 14.09 3.333 10V6.015c0-.667 0-1 .11-1.286.096-.253.252-.479.455-.658.23-.202.542-.32 1.166-.553l4.468-1.676c.173-.065.26-.097.349-.11a.833.833 0 01.238 0c.09.013.176.045.35.11l4.467 1.676c.624.234.936.35 1.166.553.203.18.36.405.456.658.109.286.109.62.109 1.286V10z"
+      stroke="#fff"
+      strokeWidth={1.8}
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
   </Svg>
 );
