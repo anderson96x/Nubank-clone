@@ -1,4 +1,4 @@
-import { Container, InnerContainer } from "./style";
+import { Container, InnerContainer, IconWrapper } from "./style";
 import {
   CurrencyDollar,
   Phone,
@@ -15,10 +15,18 @@ function MainButtons() {
           elevation: 1,
         }}
       >
-        <SwitchVertical />
-        <CurrencyDollar />
-        <ShoppingBag />
-        <Phone />
+        <IconWrapper selected={true}>
+          <SwitchVertical selected={true}/>
+        </IconWrapper>
+        <IconWrapper>
+          <CurrencyDollar />
+        </IconWrapper>
+        <IconWrapper>
+          <ShoppingBag />
+        </IconWrapper>
+        <IconWrapper>
+          <Phone />
+        </IconWrapper>
       </InnerContainer>
     </Container>
   );

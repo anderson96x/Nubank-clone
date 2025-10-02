@@ -7,7 +7,7 @@ export const Container = styled.View`
 `;
 
 export const InnerContainer = styled.View`
-  background-color: #fff;
+  background-color: rgba(255,255,255,0.95);
   flex-direction: row;
   padding: 15px;
   height: 60px;
@@ -15,5 +15,13 @@ export const InnerContainer = styled.View`
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  gap: 40px;
+`;
+
+export const IconWrapper = styled.View<{ selected?: boolean }>`
+  background-color: ${({ selected }) =>
+    selected ? "rgba(138,25,214,0.1)" : "transparent"};
+  padding: 15px;
+  padding-left: 21px;
+  padding-right: 21px;
+  border-radius: 50px;
 `;
