@@ -1,10 +1,15 @@
-import { Container, InnerContainer, IconWrapper } from "./style";
+import {
+  Container,
+  InnerContainer,
+  IconWrapper,
+} from "./style";
 import {
   CurrencyDollar,
   Phone,
   ShoppingBag,
   SwitchVertical,
 } from "$svg/MainButtonsIcons";
+import { FontAwesome } from "@expo/vector-icons";
 
 function MainButtons() {
   return (
@@ -16,7 +21,7 @@ function MainButtons() {
         }}
       >
         <IconWrapper selected={true}>
-          <SwitchVertical selected={true}/>
+          <SwitchVertical selected={true} />
         </IconWrapper>
         <IconWrapper>
           <CurrencyDollar />
@@ -26,6 +31,7 @@ function MainButtons() {
         </IconWrapper>
         <IconWrapper>
           <Phone />
+            <FontAwesome name="circle" size={12} color="#8a19d6" style={{position: "absolute", right: 10, top: 5}} />
         </IconWrapper>
       </InnerContainer>
     </Container>

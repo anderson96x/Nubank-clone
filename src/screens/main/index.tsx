@@ -31,6 +31,7 @@ import RateThisScreen from "$components/RateThisScreen";
 import MainButtons from "$components/MainButtons";
 import { StatusBar } from 'expo-status-bar';
 import Constants from "expo-constants";
+import { FontAwesome } from "@expo/vector-icons";
 
 const Home = () => {
   return (
@@ -43,6 +44,7 @@ const Home = () => {
               <HeaderIconsContainer>
                 <IconUserContainer>
                   <IconUserSVG />
+                  <FontAwesome name="circle" size={14} color="#fff" style={{position: "absolute", right: 0, top: 0}} />
                 </IconUserContainer>
                 <RightIconsContainer>
                   <IconOpenEyeSVG />
