@@ -29,11 +29,14 @@ import Loan from "$components/Loan";
 import FindOutMore from "$components/FindOutMore";
 import RateThisScreen from "$components/RateThisScreen";
 import MainButtons from "$components/MainButtons";
+import { StatusBar } from 'expo-status-bar';
+import Constants from "expo-constants";
 
 const Home = () => {
   return (
-    <View style={{ flex: 1 }}>
-      <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
+    <View style={{ flex: 1, paddingTop: Constants.statusBarHeight, backgroundColor: "#8a19d6" }}>
+      <StatusBar style="light" translucent={false} />
+      <ScrollView contentContainerStyle={{ flexGrow: 1, backgroundColor: "#fff"}}>
         <Container>
           <Header>
             <HeaderContainer>

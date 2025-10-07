@@ -12,14 +12,14 @@ export const Container = styled.ScrollView`
 // Header
 export const Header = styled.View`
   background-color: ${colors.purple};
-  height: 175px;
+  height: ${175 - Constants.statusBarHeight};
   align-items: center;
   margin-bottom: 10px;
 `;
 
 export const HeaderContainer = styled.View`
   /* background-color: orange; */
-  margin-top: ${Constants.statusBarHeight + 10};
+  margin-top: 10px;
   flex: 1;
   ${MARGIN};
 `;
