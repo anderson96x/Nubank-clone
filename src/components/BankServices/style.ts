@@ -32,3 +32,18 @@ export const Text = styled.Text`
   margin-top: 15px;
   width: 75px;
 `;
+
+export const TextBubble = styled.Text`
+  background-color: ${colors.purple};
+  font-family: ${fonts.Roboto_700Bold};
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  width: 70px;
+  height: 20px;
+  border-radius: 5px;
+  padding: 1px;
+  position: absolute;
+  bottom: 50px;
+  z-index: 5;
+`;
